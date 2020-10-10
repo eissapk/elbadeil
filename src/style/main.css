@@ -1,0 +1,363 @@
+/* START Vars */
+:root {
+    --main-font: 'Cairo', helvetica, Arial, sans-serif;
+    --radius: 3px;
+    --main-text-color: #333;
+    --sub-text-color: #666;
+    --main-background-color: #6a11cb;
+    --lan-btn-background-color: #f1f4f5;
+    --hover-btn-background-color: #ebebeb;
+    --border-color: #e0e0e0;
+    --white-color: #fff;
+    --product-one: #30cc71;
+    --product-two: #6a11cb;
+    --product-three: #ff4758;
+    --product-four: #2d294c;
+    --header-linear-gradient: linear-gradient(to right, rgba(106, 17, 203, 0.5), rgba(37, 117, 252, 0.5));
+    --test-linear-gradient: linear-gradient(to right, rgba(106, 17, 203, 0.8), rgba(37, 117, 252, 0.8));
+    --shadow: rgba(0, 9, 128, .05);
+    --success: #30cc71;
+    --error: #ff4758;
+}
+
+/* END Vars */
+
+/* *START GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* user-select: none; */
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: var(--main-font);
+    line-height: 1.6;
+    color: var(--main-text-color);
+    background-color: var(--white-color);
+    letter-spacing: 0.4px;
+}
+
+body {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* *END GLOBAL */
+
+/* start main container */
+#main-con {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "nav"
+        "header"
+        "steps"
+        "products"
+        "pricing"
+        "comments"
+        "watch-video"
+        "rates"
+        "form"
+        "contact"
+        "about"
+        "members"
+        "article-section"
+        "faq"
+        "footer"
+    ;
+    justify-content: center;
+    align-content: center;
+}
+
+/* end main container */
+
+/* start headline */
+.headline {
+    margin-bottom: 50px;
+}
+
+.headline hr {
+    width: 35px;
+    height: 1px;
+    background: var(--main-text-color);
+    margin: auto;
+    border: 0;
+}
+
+.headline h1 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+/* end headline */
+
+/* start notification */
+#notification-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 6;
+    display: none;
+}
+
+/* start success */
+#success {
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: var(--white-color);
+    border-radius: var(--radius);
+    text-align: center;
+    padding-bottom: 15px;
+    display: none;
+}
+
+#success span {
+    color: var(--white-color);
+    background: var(--success);
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+#success p {
+    padding: 15px 20px;
+    color: var(--sub-text-color);
+}
+
+#success button {
+    background-color: var(--success);
+    color: var(--white-color);
+    border: 1px solid var(--success);
+    border-radius: var(--radius);
+    padding: 10px 0;
+    width: 50%;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#success button:hover {
+    background-color: var(--white-color);
+    color: var(--success);
+}
+
+#success button:focus {
+    outline: none;
+    box-shadow: 0 0 10px 3px var(--shadow);
+}
+
+/* end success */
+
+/* start error */
+#error {
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: var(--white-color);
+    border-radius: var(--radius);
+    text-align: center;
+    padding-bottom: 15px;
+    display: none;
+}
+
+#error span {
+    color: var(--white-color);
+    background: var(--error);
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: var(--radius) var(--radius) 0 0;
+}
+
+#error p {
+    padding: 15px 20px;
+    color: var(--sub-text-color);
+}
+
+#error button {
+    background-color: var(--error);
+    color: var(--white-color);
+    border: 1px solid var(--error);
+    border-radius: var(--radius);
+    padding: 10px 0;
+    width: 50%;
+    font-weight: 600;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#error button:hover {
+    background-color: var(--white-color);
+    color: var(--error);
+}
+
+#error button:focus {
+    outline: none;
+    box-shadow: 0 0 10px 3px var(--shadow);
+}
+
+/* end error */
+
+/* end notification */
+
+/* !start popup */
+#popup {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    display: none;
+    opacity: 0;
+    animation: popup 1s ease forwards;
+}
+
+/* start text */
+#popup-text {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 250px;
+    background: var(--white-color);
+    color: var(--sub-text-color);
+    border-radius: var(--radius);
+    padding: 10px;
+    box-shadow: 0 0 6px 3px var(--shadow);
+    line-height: 26px;
+    font-size: 15px;
+    opacity: 0;
+    animation: popup 1s ease forwards;
+}
+
+#popup-text p {
+    margin-bottom: 5px;
+}
+
+#popup-text a {
+    padding: 2px 0;
+    display: block;
+    text-align: center;
+    background: var(--success);
+    color: var(--white-color);
+    font-weight: bold;
+    border-radius: var(--radius);
+}
+
+/* end text */
+
+/* start icon */
+#popup-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: var(--radius);
+    background: var(--success);
+    box-shadow: 0 0 6px 3px var(--shadow);
+}
+
+#popup-icon svg {
+    fill: var(--white-color);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    animation: popup 0.5s ease forwards;
+}
+
+#popup-icon .popup-open {
+    display: none;
+}
+
+/* end icon */
+@keyframes popup {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* !end popup */
+
+/* *start scroll top */
+#scroll-top {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 5;
+    background: linear-gradient(90deg, #6a11cb 0, #2575fc 51%, #6a11cb);
+    background-size: 200% auto;
+    transition: all .6s ease-in-out;
+    cursor: pointer;
+    border-radius: var(--radius);
+    box-shadow: 0 0 6px 3px var(--shadow);
+    display: none;
+    opacity: 0;
+    animation: scroll 0.5s ease forwards;
+}
+
+#scroll-top svg {
+    fill: var(--white-color);
+    height: 30px;
+    cursor: pointer;
+    padding: 10px 17.5px;
+    box-sizing: content-box;
+}
+
+#scroll-top:hover {
+    background-position: center right;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* *end scroll top */

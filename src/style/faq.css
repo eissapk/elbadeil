@@ -1,0 +1,84 @@
+/* start wrapper */
+#faq {
+    width: 100%;
+    grid-area: faq;
+    position: relative;
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+    z-index: 2;
+    margin-bottom: 334px;
+}
+
+#faq .headline h1 {
+    color: var(--white-color);
+}
+
+#faq .headline hr {
+    background: var(--white-color);
+}
+
+/* start wrapper */
+
+#faq-wrapper {
+    width: calc(100% - 40px);
+    margin: auto;
+}
+
+#faq-wrapper section {
+    background: var(--white-color);
+    box-shadow: 0 0 6px 2px var(--shadow);
+    border-radius: var(--radius);
+    color: var(--sub-text-color);
+    margin-top: 25px;
+    opacity: 0;
+}
+
+#faq-wrapper section:first-child {
+    margin-top: 0;
+}
+
+/* !start question */
+#faq-wrapper section .question {
+    position: relative;
+}
+
+#faq-wrapper section .question h4 {
+    color: var(--sub-text-color);
+    font-size: 16px;
+    font-weight: normal;
+    padding: 20px 20px 20px 60px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+#faq-wrapper section .question svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    transition: transform .5s cubic-bezier(.99, .05, .055, .975);
+    fill: var(--sub-text-color);
+    z-index: 0;
+}
+
+/* !end question */
+
+/* *start answer */
+#faq-wrapper section .answer {
+    overflow: hidden;
+    height: 0;
+    transition: height .5s cubic-bezier(.99, .05, .055, .975);
+}
+
+#faq-wrapper section .answer p {
+    padding: 5px 20px 20px;
+    font-size: 14px;
+}
+
+/* *end answer */

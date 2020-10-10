@@ -1,0 +1,49 @@
+/* *start wrapper */
+#about {
+    width: 100%;
+    grid-area: about;
+    position: relative;
+    background: var(--white-color);
+    z-index: 2;
+    padding: 50px 0 40px 0;
+}
+
+/* *start wrapper */
+
+.about-text-wrapper {
+    width: 100%;
+    padding: 0 20px;
+    line-height: 30px;
+    opacity: 0;
+}
+
+.about-down {
+    overflow: hidden;
+    transition: height 0.6s ease-in-out;
+    display: none;
+}
+
+.about-active {
+    display: block !important;
+}
+
+.about-text-wrapper p {
+    font-size: 18px;
+    color: var(--sub-text-color);
+}
+
+.about-down h2 {
+    margin: 20px 0 10px;
+}
+
+.about-text-wrapper button {
+    background: transparent;
+    border: 0;
+    color: var(--main-background-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.about-text-wrapper button:focus {
+    outline: none;
+}

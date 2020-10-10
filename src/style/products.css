@@ -1,0 +1,111 @@
+#products {
+    width: 100%;
+    grid-area: products;
+    position: relative;
+    z-index: 2;
+    background: var(--white-color);
+}
+
+/* start product container */
+.product-con {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+/* end product container */
+
+/* start products */
+.product {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-bottom: 2px solid var(--white-color);
+}
+
+.product:last-child {
+    border-bottom: 0;
+}
+
+/* img */
+.product-img {
+    width: 100%;
+    height: 100%;
+    background: url('../img/pril.webp') no-repeat;
+    background-size: auto 200px;
+    background-position: center;
+    transition: background 0.6s ease-in-out;
+}
+
+.product:nth-child(2) .product-img {
+    background: url('../img/downy.webp') no-repeat;
+    background-size: auto 200px;
+    background-position: center;
+}
+
+.product:nth-child(3) .product-img {
+    background: url('../img/dettol.webp') no-repeat;
+    background-size: auto 200px;
+    background-position: center;
+}
+
+.product:nth-child(4) .product-img {
+    background: url('../img/ariel.webp') no-repeat;
+    background-size: auto 200px;
+    background-position: center;
+}
+
+/* layer */
+.product-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--product-one);
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.product:nth-child(2) .product-layer {
+    background: var(--product-two);
+}
+
+.product:nth-child(3) .product-layer {
+    background: var(--product-three);
+}
+
+.product:nth-child(4) .product-layer {
+    background: var(--product-four);
+}
+
+/* text */
+.product-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--white-color);
+    opacity: 0;
+}
+
+/* hover */
+.product:hover .product-img {
+    background-size: auto 400px;
+}
+
+.product:hover .product-layer {
+    opacity: 0.3;
+}
+
+.product:hover .product-text {
+    visibility: hidden;
+}
+
+/* end products */

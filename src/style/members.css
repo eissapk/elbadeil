@@ -1,0 +1,130 @@
+/* *START WRAPPER */
+#members {
+    width: 100%;
+    grid-area: members;
+    padding: 50px 0;
+    background: var(--test-linear-gradient), url('../img/members.webp') no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+#members .headline h1 {
+    color: var(--white-color);
+}
+
+#members .headline hr {
+    background: var(--white-color);
+}
+
+/* *START WRAPPER */
+
+#members-wrapper {
+    width: calc(100% - 40px);
+    margin: 100px auto 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 100px 0;
+    justify-content: center;
+}
+
+/* ?start card */
+.mem-card {
+    width: 100%;
+    position: relative;
+    background: var(--white-color);
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 12px 6px var(--shadow);
+    opacity: 0;
+}
+
+/* start img */
+.mem-card .mem-card-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+    border: 4px solid var(--white-color);
+    box-shadow: 0 0 6px 3px var(--shadow);
+    background: url('../img/members-profile-pic.webp') no-repeat;
+    background-size: cover;
+}
+
+#members-wrapper .mem-card:nth-child(2) .mem-card-img {
+    background-position: 0 -92px;
+}
+
+#members-wrapper .mem-card:nth-child(3) .mem-card-img {
+    background-position: 0 -184px;
+}
+
+/* end img */
+
+
+/* start name */
+.mem-card h3 {
+    margin-top: 60px;
+}
+
+/* end name */
+
+/* start position */
+.mem-card span {
+    margin: 10px 0;
+    display: block;
+    color: var(--sub-text-color);
+}
+
+/* end position */
+
+/* start brief */
+.mem-card p {
+    padding: 0 20px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+/* end brief */
+
+/* start social */
+.mem-card ul {
+    padding: 15px 20px 20px 20px;
+}
+
+.mem-card ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.mem-card ul li a {
+    width: 20px;
+    height: 20px;
+    float: right;
+    background: var(--test-linear-gradient);
+    padding: 10px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.mem-card ul li a svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--white-color);
+}
+
+.mem-card ul li a:hover {
+    transform: scale(1.1);
+}
+
+/* end social */
+
+/* ?end card */

@@ -1,0 +1,56 @@
+#steps {
+    width: 100%;
+    grid-area: steps;
+    position: relative;
+    background: var(--white-color);
+    z-index: 2;
+    padding: 50px 0;
+}
+
+.fig-con {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 25px 0;
+}
+
+#steps figure {
+    position: relative;
+    width: 100%;
+    padding: 30px;
+    border-radius: var(--radius);
+    text-align: right;
+    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035), 0 7px 18px rgba(0, 9, 128, 0.05);
+    opacity: 0;
+}
+
+#steps figure span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: var(--main-background-color);
+    color: var(--white-color);
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 0 var(--radius) 0 0;
+}
+
+#steps figure .steps-img-con {
+    width: 100%;
+}
+
+#steps figure .steps-img-con img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#steps figure p {
+    margin: 20px 0 0 0;
+    color: var(--sub-text-color);
+}

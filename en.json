@@ -1,0 +1,263 @@
+{
+    "title": "El Badeil for Recycling",
+
+    "notify": {
+        "success": {
+            "header": "success!",
+            "body": "your message had been sent successfully!",
+            "btn": "got it!"
+        },
+        "error": {
+            "header": "error",
+            "body": "your message couldn't be sent",
+            "btn": "try again!"
+        }
+    },
+
+    "popup": {
+        "text": "fill out the form and get your favorable product right now!",
+        "btn": "click here"
+    },
+
+    "nav": {
+        "logo": "EL Badeil",
+        "home": "home",
+        "steps": "process",
+        "products": "products",
+        "pricing": "pricing",
+        "testimonials": "testimonials",
+        "form": "get paid",
+        "about": "about",
+        "memebers": "memebers",
+        "articles": "articles",
+        "faqs": "faqs"
+    },
+
+    "hint": {
+        "text": "Important notice: We work on the 15th of May City region and the Helwan region and their environs."
+    },
+
+    "header": {
+        "phase_1": {
+            "title": "what if we can recycle cooking oil"
+        },
+        "phase_2": {
+            "title": "oil shouldn't be reused for cooking!"
+        },
+        "phase_3": {
+            "title": "dropping oil in pipes causes clog!"
+        },
+        "phase_4": {
+            "title": "replace your oil with a product"
+        },
+        "replace_btn": "get product",
+        "cash_btn": "get cash"
+    },
+
+    "steps": {
+        "header": "process",
+        "card_1": "fill out the form and get a free product or get paid",
+        "card_2": "collect at least 3 liters of used cooking oil in a bottle",
+        "card_3": "contact with us via Facebook, WhatsApp or phone call",
+        "card_4": "we will get to you in 48 hours since filling out the form"
+    },
+    "products": {
+        "header": "products",
+        "product_1": "dishes soap",
+        "product_2": "clothes perfume",
+        "product_3": "dettol",
+        "product_4": "cleaner gel"
+    },
+    "pricing": {
+        "header": "pricing",
+        "card_1": {
+            "name": "dishes soap",
+            "item_1": "eliminates big fats",
+            "item_2": "glycerin included",
+            "item_3": "safe on hands",
+            "item_4": "lemon power"
+        },
+        "card_2": {
+            "name": "clothes perfume",
+            "item_1": "smoother clothes",
+            "item_2": "flowers smell",
+            "item_3": "safe on clothes",
+            "item_4": "lasting perfume"
+        },
+        "card_3": {
+            "name": "dettol",
+            "item_1": "floor cleaner",
+            "item_2": "surface cleaner",
+            "item_3": "germs eliminator",
+            "item_4": "lasting perfume"
+        },
+        "card_4": {
+            "name": "cleaner gel",
+            "item_1": "clothes cleaner gel",
+            "item_2": "eliminates big fats",
+            "item_3": "safe on clothes",
+            "item_4": "flowers smell"
+        },
+        "unit": "liters",
+        "period": "of used oil",
+        "btn": "order now"
+    },
+
+    "comments": {
+        "header": "testimonials",
+        "card_1": {
+            "name": "shereen fathy",
+            "job": "house wife",
+            "content": "based on my experience it' is a respectful company and its representatives are very polite god bless you all"
+        },
+        "card_2": {
+            "name": "assmaa roshdy",
+            "job": "teacher",
+            "content": "it's a very good idea guys I hope everyone acts like you"
+        },
+        "card_3": {
+            "name": "shaimaa mahmoud",
+            "job": "house wife",
+            "content": "I'm my self dealt with them and used their products and they are very useful, thank you guys god bless you"
+        }
+    },
+
+    "video": {
+        "header": "watch video"
+    },
+
+    "rates": {
+        "happy": "happy clients",
+        "active": "active clients",
+        "total": "total rates"
+    },
+
+    "form": {
+        "header": "have oil? replace it or get paid now!",
+        "title": "el badeil from",
+        "selector": {
+            "form_1": "don't have oil",
+            "form_2": "get product",
+            "form_3": "get cash"
+        },
+        "name": "name",
+        "phone": "phone",
+        "address": "address",
+        "btn": "send",
+        "oilQuantityLabel": "oil quantity:",
+        "placeholder": {
+            "name": "John Doe",
+            "address": "e.g. city, street, building, apartment"
+        },
+
+        "form_1": {
+            "term": "i agree to collect oil every month"
+        },
+
+        "form_2": {
+            "label": {
+                "oilQ": "( 3 liters)",
+                "productQ": "1 product available"
+            },
+            "select": {
+                "defaultOption": "select product",
+                "option_1": "dishes soap",
+                "option_2": "clothes perfume",
+                "option_3": "dettol",
+                "option_4": "cleaner gel"
+            }
+        },
+
+        "form_3": {
+            "switch": {
+                "liter": "liter",
+                "ton": "ton"
+            },
+            "label": {
+                "literQ": "( 3 liters)",
+                "tonQ": "( 0.25 ton)"
+            }
+        },
+
+        "googleForm": {
+            "title": "In case you have issues in the current form, please sign up through this one.",
+            "link": "Google Form"
+        }
+    },
+
+    "map": {
+        "title": "el badeil corp"
+    },
+
+    "contact": {
+        "header": "contact us",
+        "address": "egypt | 15th of may city"
+    },
+
+    "about": {
+        "header": "about",
+        "mainText": "a company consisted of a group of aspiring youth to provide a community service that benefits every Egyptian house and provide environmental solutions in reducing pollution rates resulting from throwing consumed oil in water by collecting and directing it in the path of alternative energy production",
+        "subText": "and offering community solutions by providing high-quality and safe  products for free, relying on teamwork and efficiency in activity management and seeking to understand client needs from other products and providing these products in return of  the minimal effort of the client.",
+        "vision": {
+            "header": "our vision",
+            "text": "collecting  consumed food oil from houses and replacing them with high-quality products for free and delivering them to customers using the best methods at all to communicate with clients in a professional manner and providing the best safe products which make the quality of our services and customers satisfaction one of the most important items in our marketing plan."
+        },
+        "aim": {
+            "header": "our aim",
+            "text": "creating new needs of customers by replacing a consumed product with a high-quality product for free and providing environmental and community solutions."
+        },
+        "moreBtn": "more",
+        "lessBtn": "less"
+    },
+
+    "members": {
+        "header": "members",
+        "card_1": {
+            "name": "abdel hamid rabie",
+            "job": "marketing manager",
+            "about": "i am a little mysterious person and there is nothing to know about me right now. But maybe when you come back later I add a brief about me"
+        },
+        "card_2": {
+            "name": "abdel rahman anwar",
+            "job": "executive manager",
+            "about": "i am a little mysterious person and there is nothing to know about me right now. But maybe when you come back later I add a brief about me"
+        },
+        "card_3": {
+            "name": "eissa saber",
+            "job": "website manager",
+            "about": "i am a little mysterious person and there is nothing to know about me right now. But maybe when you come back later I add a brief about me"
+        }
+    },
+
+    "faq": {
+        "header": "faqs",
+        "card_1": {
+            "q": "do you reuse consumed oil in food again?",
+            "a": "that is very dangerous on health, so we don't reuse it in food."
+        },
+        "card_2": {
+            "q": "can I really get my favorable product for free?",
+            "a": "of course you can get any product you want from our products, one product = 3 liters of consumed food oil."
+        },
+        "card_3": {
+            "q": "where is the company head office and does it have branches?",
+            "a": "the head office at 15th of May city - branches extend to Helwan and Atlas."
+        },
+        "card_4": {
+            "q": "what alternative energy do you produce?",
+            "a": "biofuels - industrial glycerin - industrial greases."
+        }
+    },
+
+    "footer": {
+        "btns": {
+            "about": "about",
+            "products": "products",
+            "pricing": "pricing",
+            "faq": "faqs",
+            "form": "form"
+        },
+        "copyright": "© 2020 all rights reserved"
+    }
+
+}

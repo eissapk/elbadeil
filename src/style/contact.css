@@ -1,0 +1,52 @@
+/* start wrapper */
+#contact {
+    width: 100%;
+    grid-area: contact;
+    padding: 50px 0;
+    background: var(--test-linear-gradient), url('../img/contact.webp') no-repeat;
+    background-position: left center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+#contact .headline h1 {
+    color: var(--white-color);
+}
+
+#contact .headline hr {
+    background: var(--white-color);
+}
+
+/* end wrapper */
+
+/* !start contact details wrapper */
+#contact-details-wrapper {
+    width: 100%;
+    padding: 0 20px;
+}
+
+#contact-details-wrapper section {
+    text-align: center;
+    margin: 20px 0;
+    direction: ltr;
+    opacity: 0;
+}
+
+.phone-icon,
+.mail-icon,
+.map-icon {
+    height: 25px;
+    fill: var(--white-color);
+    margin-bottom: -5px;
+}
+
+#contact-details-wrapper section p {
+    display: inline-block;
+    color: var(--white-color);
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/* !end contact details wrapper */

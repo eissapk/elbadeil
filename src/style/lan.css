@@ -1,0 +1,515 @@
+/* !START HEADLINE */
+.headline h1 {
+    text-transform: uppercase;
+}
+
+/* !END HEADLINE */
+
+/* *START NOTIFICATION */
+#success span::first-letter,
+#success p::first-letter,
+#success button::first-letter,
+#error span::first-letter,
+#error p::first-letter,
+#error button::first-letter {
+    text-transform: uppercase;
+}
+
+/* *END NOTIFICATION */
+
+/* !START SCROLL TO TOP */
+#scroll-top {
+    right: 5px;
+    left: initial;
+}
+
+/* !END SCROLL TO TOP */
+
+
+/* *START POPUP */
+#popup {
+    right: initial;
+    left: 5px;
+}
+
+#popup-text {
+    right: initial;
+    left: 0;
+}
+
+#popup-text p::first-letter,
+#popup-text a::first-letter {
+    text-transform: uppercase;
+}
+
+/* *END POPUP */
+
+
+/* !START NAV */
+.upper-nav {
+    grid-template-columns: 160px 1fr 50px;
+}
+
+/* start logo */
+#logo {
+    margin: 0 0 0 20px;
+}
+
+#logo img {
+    margin: 0 10px 0 0;
+}
+
+#logo span {
+    float: right;
+}
+
+/* end logo */
+
+/* start menu btn */
+.menu-btn {
+    margin: 0 20px 0 0;
+}
+
+/* end menu btn */
+
+/* start navs */
+#top-nav {
+    margin: 0 15px 0 0;
+}
+
+#side-nav li a {
+    text-transform: uppercase;
+}
+
+#top-nav li a {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#bottom-nav li a {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* end navs */
+
+/* start hint */
+
+#hint>button {
+    float: left;
+}
+
+#hint>p {
+    float: left;
+    padding: 0 0 0 10px;
+}
+
+/* end hint */
+
+/* !END NAV */
+
+
+/* *START HEADER */
+
+/* start section */
+#header-carousel-wrapper .header-carousel-content section h1,
+#header-carousel-wrapper .header-carousel-content section ul li a i {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+/* start carousel dots */
+.header-carousel-dots span {
+    float: left;
+}
+
+/* end carousel dots */
+
+/* *END HEADER */
+
+
+/* !START STEPS */
+#steps figure {
+    text-align: left;
+}
+
+#steps figure span {
+    right: initial;
+    left: 0;
+    border-radius: var(--radius) 0 0 0;
+}
+
+#steps figure p::first-letter {
+    text-transform: uppercase;
+}
+
+/* !END STEPS */
+
+
+/* *START PRODUCTS */
+.product-text {
+    text-transform: capitalize;
+}
+
+/* *END PRODUCTS */
+
+
+/* !START PRICING */
+
+.product-name,
+.product-features li i,
+.lower-pricing-el a {
+    text-transform: capitalize;
+}
+
+.product-features li i {
+    margin: 0 0 0 5px;
+}
+
+.price {
+    grid-template-columns: 50px 30px 1fr;
+}
+
+.price i {
+    margin: 0 0 0 25px;
+    text-transform: capitalize;
+}
+
+.price i:after {
+    right: initial;
+    left: -13px;
+}
+
+/* !END PRICING */
+
+
+/* *START COMMENTS */
+.comments-carousel-content>div:first-of-type::first-letter {
+    text-transform: uppercase;
+}
+
+#comments-carousel-dots span {
+    float: left;
+}
+
+/* *END COMMENTS */
+
+
+/* !START RATES */
+.rates-box p {
+    text-transform: uppercase;
+}
+
+/* !END RATES */
+
+
+/* *START FORM */
+#form-title {
+    text-transform: capitalize;
+}
+
+.field .validity {
+    left: initial;
+    right: 3px;
+}
+
+#select-wrapper>label i {
+    margin: 0 0 0 20px;
+    text-transform: capitalize;
+}
+
+#select-wrapper label .check {
+    right: initial;
+    left: 0;
+}
+
+#select-wrapper label .check::after {
+    right: initial;
+    left: 3px;
+}
+
+/* end selectors */
+/* start forms */
+
+/* START FORM ONE */
+/* start inputs */
+
+#sign-up-form .input-container label {
+    text-transform: capitalize;
+}
+
+#sign-up-form .input-container input {
+    margin: 0 0 0 1px;
+    text-transform: none;
+}
+
+/* end inputs */
+/* start terms */
+#sign-up-form .terms {
+    float: left;
+}
+
+#sign-up-form .terms label::first-letter {
+    text-transform: uppercase;
+}
+
+#sign-up-form .terms label i {
+    margin: 0 0 0 35px;
+    font-size: 15px;
+    display: block;
+}
+
+#sign-up-form .terms label .check {
+    right: initial;
+    left: 0;
+}
+
+#sign-up-form .terms label .check::after {
+    right: initial;
+    left: 10px;
+}
+
+/* end terms */
+
+/* start button */
+#sign-up-form button[type="submit"] {
+    margin: 0 0 0 2px;
+    text-transform: uppercase;
+}
+
+/* end button */
+/* END FORM ONE */
+
+/* START FORM TWO */
+
+/* start range */
+#sign-up-form input[type="range"] {
+    margin: 0 0 0 2px;
+}
+
+#sign-up-form input[type="range"]::before {
+    left: initial;
+    right: 0;
+}
+
+#sign-up-forminput[type="range"]::after {
+    right: initial;
+    left: 0;
+}
+
+#range-text-2-title,
+#range-text-3-title {
+    margin: 0 5px 0 0;
+}
+
+/* end range */
+
+/* start select */
+#select>div select {
+    padding: 0 0 0 10px;
+    background-position-x: calc(100% - 10px) !important;
+    text-transform: capitalize;
+}
+
+/* end select */
+
+/* END FORM TWO */
+
+/* START FORM 3 */
+
+/* start switch */
+#sign-up-form .switch {
+    float: left;
+}
+
+#sign-up-form .switch label {
+    float: left;
+}
+
+#sign-up-form .liter {
+    float: left;
+    margin: 0 0 0 5px;
+    text-transform: capitalize;
+}
+
+#sign-up-form .ton {
+    float: left;
+    text-transform: capitalize;
+}
+
+#sign-up-form .switch label .switch-round {
+    right: initial;
+    left: 0;
+}
+
+#sign-up-form .switch label .switch-round::after {
+    right: initial;
+    left: 5px;
+}
+
+#sign-up-form .switch label input:checked~.switch-round::after {
+    left: initial;
+    transform: translateX(calc(100% + 10px));
+}
+
+/* end switch */
+/* END FORM 3 */
+/* end forms */
+
+/* start map */
+#map-box span {
+    text-transform: capitalize;
+}
+
+/* end map */
+
+/* *END FORM */
+
+
+/* !START CONTACT */
+
+#contact-address-lan {
+    text-transform: capitalize;
+}
+
+/* !END CONTACT */
+
+
+/* *START ABOUT */
+.about-text-wrapper p::first-letter {
+    text-transform: uppercase;
+}
+
+.about-down h2,
+#about-btn {
+    text-transform: capitalize;
+}
+
+/* *END ABOUT */
+
+
+/* !START MEMBERS */
+
+.mem-card h3,
+.mem-card span,
+.mem-card p::first-letter {
+    text-transform: capitalize;
+}
+
+/* !END MEMBERS */
+
+
+/* *START FAQS */
+#faq {
+    background: var(--white-color)
+}
+
+#faq .headline h1 {
+    color: var(--main-text-color);
+}
+
+#faq .headline hr {
+    background: var(--main-text-color);
+}
+
+#faq-wrapper section .question h4 {
+    padding: 20px 60px 20px 20px;
+}
+
+#faq-wrapper section .question h4::first-letter {
+    text-transform: uppercase;
+}
+
+#faq-wrapper section .question svg {
+    left: initial;
+    right: 20px;
+}
+
+/* *END FAQS */
+
+
+/* !START FOOTER */
+
+#footer-links li a {
+    text-transform: capitalize;
+}
+
+/* !START FOOTER */
+
+
+
+
+
+/* START MEDIA QUERY */
+@media (min-width:768px) {
+
+    /* *start nav */
+    #logo {
+        font-size: 22px;
+    }
+
+    .upper-nav {
+        grid-template-columns: 173px 1fr 595px;
+    }
+
+    /* *end nav */
+
+
+    /* !start header */
+    /* start text */
+    #header-carousel-wrapper .header-carousel-content section {
+        left: -550px;
+        right: initial;
+        text-align: left;
+        margin: 0 0 0 20px;
+    }
+
+    #header-carousel-wrapper .current section {
+        transform: translate(550px, -50%);
+    }
+
+    #header-carousel-wrapper .header-carousel-content section h1 {
+        text-align: left;
+    }
+
+    /* end text */
+    /* start img */
+    #header-carousel-wrapper .header-carousel-content .header-carousel-content-img-con {
+        right: -1000px;
+        left: initial;
+        margin: 0 20px 0 0;
+    }
+
+    #header-carousel-wrapper .current .header-carousel-content-img-con {
+        transform: translateX(-1000px);
+    }
+
+    /* end img */
+    /* !end header */
+
+    /* *start form */
+    #sign-up-form .input-container {
+        float: left;
+    }
+
+    .name-input {
+        margin: 0 20px 0 0;
+    }
+
+    #range-text-2-product {
+        margin: 0 0 0 20px;
+    }
+
+    /* *end form */
+
+}
+
+/* !start contact bug fix */
+@media (min-width:768px) and (max-width: 800px) {
+    #contact-details-wrapper {
+        padding: 0 3px;
+    }
+}
+
+/* !end contact bug fix */
+/* END MEDIA QUERY */

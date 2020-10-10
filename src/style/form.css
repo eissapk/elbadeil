@@ -1,0 +1,694 @@
+/* start container */
+#form {
+    width: 100%;
+    grid-area: form;
+    padding: 50px 0;
+    position: relative;
+    background: var(--white-color);
+    z-index: 2;
+}
+
+#sign-up-form {
+    width: calc(100% - 40px);
+    margin: auto;
+    padding: 20px;
+    background: var(--lan-btn-background-color);
+    border-radius: var(--radius);
+    box-shadow: 0 0 10px 1px var(--shadow);
+    opacity: 0;
+}
+
+#form-title {
+    display: block;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 25px;
+    background: var(--test-linear-gradient);
+    color: var(--white-color);
+    border-radius: var(--radius);
+}
+
+#googleForm {
+    margin-bottom: 25px;
+}
+
+
+/* start hide number arrows */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    /* Firefox */
+}
+
+input[type=text] {
+    text-transform: capitalize;
+}
+
+/* end hide number arrows */
+
+/* start placeholder */
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #bbb;
+    font-size: 14px;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #bbb;
+    font-size: 14px;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #bbb;
+    font-size: 14px;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* end placeholder */
+
+
+/* start validation */
+.field {
+    position: relative;
+}
+
+.field .validity {
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    bottom: 1px;
+    left: 2px;
+    background: var(--white-color);
+    border-radius: var(--radius);
+}
+
+.field input:valid~.validity::after {
+    position: absolute;
+    content: '\2714';
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    line-height: 38px;
+    text-align: center;
+    color: var(--success);
+}
+
+.field input:invalid~.validity::before {
+    position: absolute;
+    content: '\2718';
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    line-height: 38px;
+    text-align: center;
+    color: var(--error);
+}
+
+/* end validation */
+
+/* end container */
+
+
+/* start selectors */
+#select-wrapper {
+    margin-bottom: 25px;
+}
+
+#select-wrapper label {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+#select-wrapper>label i {
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+    background: var(--test-linear-gradient);
+    margin-right: 20px;
+    color: var(--white-color);
+    padding: 5px 10px;
+    border-radius: var(--radius);
+}
+
+#select-wrapper label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#select-wrapper label .check {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 26px;
+    height: 26px;
+    border: 2px solid var(--main-background-color);
+    border-radius: 50%;
+    box-sizing: content-box;
+}
+
+#select-wrapper label .check::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 20px;
+    height: 20px;
+    background: var(--test-linear-gradient);
+    border-radius: 50%;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+#select-wrapper label input:checked~.check {
+    border-color: var(--main-background-color);
+}
+
+#select-wrapper label input:checked~.check::after {
+    opacity: 1;
+}
+
+/* end selectors */
+
+/* start forms */
+#form_1,
+#form_2,
+#form_3 {
+    overflow: hidden;
+    transition: height 0.6s cubic-bezier(0.990, 0.050, 0.055, 0.975);
+}
+
+#form_2,
+#form_3 {
+    height: 0;
+}
+
+/* START FORM ONE */
+/* start inputs */
+#sign-up-form .input-container {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#sign-up-form .input-container label {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#sign-up-form .input-container input {
+    width: calc(100% - 2px);
+    height: 40px;
+    margin-right: 1px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    text-indent: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#sign-up-form .input-container input:focus {
+    outline: none;
+    border-color: var(--white-color);
+    box-shadow: 0px 0px 0px 1px var(--main-background-color);
+}
+
+/* end inputs */
+
+/* start terms */
+#sign-up-form .terms {
+    width: 100%;
+    margin: 5px 0;
+    float: right;
+}
+
+#sign-up-form .terms label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 20px 0;
+}
+
+#sign-up-form .terms label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#sign-up-form .terms label i {
+    font-style: normal;
+    margin-right: 35px;
+    cursor: pointer;
+    letter-spacing: 0;
+}
+
+#sign-up-form .terms label .check {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 26px;
+    height: 26px;
+    background: var(--white-color);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+#sign-up-form .terms label .check::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 6px;
+    height: 11px;
+    border: solid var(--white-color);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#sign-up-form .terms label:hover .check {
+    background: var(--border-color);
+}
+
+#sign-up-form .terms label input:checked~.check {
+    background: var(--test-linear-gradient);
+}
+
+#sign-up-form .terms label input:focus~.check {
+    border: 1px solid var(--main-background-color);
+}
+
+#sign-up-form .terms label input:checked~.check::after {
+    opacity: 1;
+}
+
+/* end terms */
+
+/* start button */
+#sign-up-form button[type="submit"] {
+    position: relative;
+    width: calc(100% - 4px);
+    padding: 15px 0;
+    background: linear-gradient(to right, #6a11cb 0, #2575fc 51%, #6a11cb 100%);
+    background-size: 200% auto;
+    color: var(--white-color);
+    border: 0;
+    border-radius: var(--radius);
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 2px;
+    top: -2px;
+}
+
+#sign-up-form button[type="submit"]:hover {
+    background-position: right center;
+}
+
+#sign-up-form button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--main-text-color);
+    border-radius: var(--radius);
+}
+
+/* end button */
+
+/* END FORM ONE */
+
+
+/* START FORM TWO */
+
+/* start range */
+#sign-up-form input[type="range"] {
+    -webkit-appearance: none;
+    position: relative;
+    width: calc(100% - 4px);
+    height: 3px;
+    border: 0;
+    border-radius: var(--radius);
+    background: var(--border-color);
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+#sign-up-form input[type="range"]::after,
+#sign-up-form input[type="range"]::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border-color);
+    z-index: 0;
+}
+
+#sign-up-form input[type="range"]::before {
+    left: 0;
+}
+
+#sign-up-forminput[type="range"]::after {
+    right: 0;
+}
+
+#sign-up-form input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--test-linear-gradient);
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+#sign-up-form input[type="range"]::-webkit-slider-thumb:active {
+    border: 3px solid var(--white-color);
+    box-shadow: 0 0 1px 2px var(--shadow);
+}
+
+#sign-up-form input[type="range"]::-moz-range-thumb {
+    position: relative;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--test-linear-gradient);
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+#sign-up-form input[type="range"]::-moz-range-thumb:active {
+    border: 3px solid var(--white-color);
+    box-shadow: 0 0 1px 2px var(--shadow);
+}
+
+#sign-up-form input[type="range"]:focus {
+    box-shadow: 0 0 0 1px var(--main-background-color);
+}
+
+#range-text-2-title,
+#range-text-3-title {
+    margin-left: 5px;
+}
+
+#range-text-2-oil,
+#range-text-3-oil,
+#range-text-3_1-oil {
+    color: var(--main-background-color);
+    font-weight: 600;
+}
+
+#range-text-2-product {
+    margin-top: 5px;
+    display: block;
+    color: var(--white-color);
+    background: var(--success);
+    padding: 5px;
+    text-align: center;
+    border-radius: var(--radius);
+    font-weight: 600;
+}
+
+/* end range */
+
+/* start select */
+
+/* start container */
+#select {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 0 !important;
+    transition: all 0.6s ease-in-out;
+}
+
+/* end container */
+
+#select>div {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: var(--radius);
+    background: var(--main-background-color);
+}
+
+#select>div:nth-child(even) {
+    background: #2575fc;
+}
+
+#select>div i {
+    display: none;
+}
+
+#select>div select {
+    width: 100%;
+    height: 40px;
+    padding-right: 10px;
+    border: 0;
+    border-radius: var(--radius);
+    appearance: none;
+    background: url('../img/arrow.svg') no-repeat;
+    background-color: var(--white-color);
+    background-size: 20px auto;
+    background-position: 10px 0;
+    line-height: normal;
+    font-weight: 600;
+}
+
+#select>div select:focus {
+    background-position: 10px -50px;
+}
+
+#select>div select:not(:focus) {
+    background-position: 10px 0;
+}
+
+/* end select */
+
+/* END FORM TWO */
+
+
+
+
+/* START FORM 3 */
+#oil-q-tons {
+    display: none;
+}
+
+/* start switch */
+#sign-up-form .switch {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 25px;
+    float: right;
+}
+
+#sign-up-form .switch label {
+    position: relative;
+    width: 75px;
+    height: 100%;
+    cursor: pointer;
+    float: right;
+    margin: 0 18px;
+}
+
+#sign-up-form .liter {
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+    background: var(--white-color);
+    color: var(--main-background-color);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    float: right;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+    margin-right: 5px;
+}
+
+#sign-up-form .ton {
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+    background: var(--white-color);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    float: right;
+    transition: all 0.3s ease-in-out;
+}
+
+#sign-up-form .switch label input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    cursor: pointer;
+}
+
+#sign-up-form .switch label .switch-round {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--test-linear-gradient);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#sign-up-form .switch label .switch-round::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--white-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+#sign-up-form .switch label input:checked~.switch-round::after {
+    right: initial;
+    transform: translateX(calc(-100% - 10px));
+}
+
+#sign-up-form .switch label input:focus~.switch-round {
+    outline: 1px dotted var(--main-text-color);
+}
+
+/* end switch */
+
+/* END FORM 3 */
+
+/* end forms */
+
+/* start map */
+#map {
+    position: relative;
+    width: 280px;
+    height: 558px;
+    margin: 50px auto 0 auto;
+    overflow: hidden;
+    opacity: 0;
+}
+
+#map-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../img/frame.svg') no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+#map img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    vertical-align: bottom;
+}
+
+#map-box {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    margin: auto;
+    background: var(--white-color);
+    border-radius: var(--radius);
+    box-shadow: 0 0 6px 3px var(--shadow);
+    padding: 10px;
+    box-sizing: content-box;
+    text-align: center;
+    z-index: 3;
+}
+
+#map-box::before {
+    position: absolute;
+    content: "";
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--main-background-color);
+    animation: animate-map 1.5s cubic-bezier(0.66, 0, 0, 1) infinite;
+}
+
+@keyframes animate-map {
+    from {
+        box-shadow: 0 0 0 0px rgba(106, 17, 203, 1);
+    }
+
+    to {
+        box-shadow: 0 0 0 15px rgba(106, 17, 203, 0);
+    }
+}
+
+#map-box::after {
+    position: absolute;
+    content: "";
+    top: -19px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 10px solid transparent;
+    border-bottom-color: var(--white-color);
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+#map-box span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#map-box a {
+    color: var(--main-text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+#map-box a:hover {
+    color: var(--sub-text-color);
+}
+
+/* end map */
